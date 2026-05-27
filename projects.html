@@ -89,6 +89,15 @@
       margin-bottom: 24px;
     }
 
+    .crumbs a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .crumbs a:hover {
+      color: var(--text);
+    }
+
     h1 {
       font-size: clamp(2.5rem, 9vw, 7rem);
       font-weight: 500;
@@ -222,7 +231,10 @@
   <header>
     <div class="container">
 
-      <div class="mono">SpecStudio / Projects</div>
+      <div class="mono crumbs">
+        <a href="index.html">SpecStudio</a> &nbsp;/&nbsp;
+        Projects
+      </div>
 
       <h1>
         Systems in Development
@@ -394,6 +406,7 @@
       </div>
 
       <div class="footer-links">
+        <a href="index.html">Home</a>
         <a href="https://github.com/ConsciousnessResearch?tab=repositories" rel="me noopener" target="_blank">GitHub</a>
       </div>
 
